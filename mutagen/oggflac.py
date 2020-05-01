@@ -160,6 +160,11 @@ class OggFLAC(OggFileType):
         return (header.startswith(b"OggS") * (
             (b"FLAC" in header) + (b"fLaC" in header)))
 
+    @staticmethod
+    def score_header(filename, fileobj, header)
+        return (header.startswith(b"OggS") * (
+            (b"FLAC" in header) + (b"fLaC" in header)))
+
 
 Open = OggFLAC
 

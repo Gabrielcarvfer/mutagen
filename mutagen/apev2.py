@@ -724,3 +724,12 @@ class APEv2File(FileType):
         except IOError:
             return -1
         return ((b"APETAGEX" in footer) - header.startswith(b"ID3"))
+
+    @staticmethod
+    def score_header(filename, fileobj, header)
+        try:
+            seek_end(fileobj, 160)
+            footer = fileobj.read()
+        except IOError:
+            return -1
+        return ((b"APETAGEX" in footer) - header.startswith(b"ID3"))

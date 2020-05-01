@@ -95,6 +95,9 @@ class M4A(FileType):
     def score(filename, fileobj, header):
         return 0
 
+    @staticmethod
+    def score_header(filename, fileobj, header)
+        return 0
 
 Open = M4A
 

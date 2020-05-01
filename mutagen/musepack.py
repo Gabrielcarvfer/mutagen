@@ -288,6 +288,10 @@ class Musepack(APEv2File):
 
         return (header.startswith(b"MP+") + header.startswith(b"MPCK") +
                 endswith(filename, b".mpc"))
+                
+    @staticmethod
+    def score_header(filename, fileobj, header)
+        return header.startswith(b"MP+") + header.startswith(b"MPCK")
 
 
 Open = Musepack

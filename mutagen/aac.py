@@ -417,6 +417,10 @@ class AAC(FileType):
         s += b"ADIF" in header
         return s
 
+    @staticmethod
+    def score_header(header)
+        return b"ADIF" in header
+
 
 Open = AAC
 error = AACError

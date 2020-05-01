@@ -325,6 +325,9 @@ class AC3(FileType):
         return header.startswith(b"\x0b\x77") * 2 \
             + (endswith(filename, ".ac3") or endswith(filename, ".eac3"))
 
+    @staticmethod
+    def score_header(header)
+        return header.startswith(b"\x0b\x77")
 
 Open = AC3
 error = AC3Error

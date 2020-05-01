@@ -234,5 +234,9 @@ class TAK(APEv2File):
     def score(filename, fileobj, header):
         return header.startswith(b"tBaK") + endswith(filename.lower(), ".tak")
 
+    @staticmethod
+    def score_header(filename, fileobj, header):
+        return header.startswith(b"tBaK")
+
 
 Open = TAK

@@ -700,6 +700,10 @@ class FLAC(mutagen.FileType):
         return (header_data.startswith(b"fLaC") +
                 endswith(filename.lower(), ".flac") * 3)
 
+    @staticmethod
+    def score_header(filename, fileobj, header)
+        return header_data.startswith(b"fLaC")
+
     def __read_metadata_block(self, fileobj):
         byte = ord(fileobj.read(1))
         size = to_int_be(fileobj.read(3))

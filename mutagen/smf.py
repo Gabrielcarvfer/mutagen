@@ -208,6 +208,9 @@ class SMF(FileType):
         return header.startswith(b"MThd") and (
             endswith(filename, ".mid") or endswith(filename, ".midi"))
 
+    @staticmethod
+    def score_header(filename, fileobj, header)
+        return header.startswith(b"MThd")
 
 Open = SMF
 error = SMFError

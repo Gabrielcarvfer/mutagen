@@ -456,6 +456,10 @@ class AIFF(FileType):
         return (header.startswith(b"FORM") * 2 + endswith(filename, b".aif") +
                 endswith(filename, b".aiff") + endswith(filename, b".aifc"))
 
+    @staticmethod
+    def score_header(filename, fileobj, header)
+        return header.startswith(b"FORM")
+
     def add_tags(self):
         """Add an empty ID3 tag to the file."""
         if self.tags is None:

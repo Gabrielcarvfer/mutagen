@@ -97,5 +97,8 @@ class MonkeysAudio(APEv2File):
     def score(filename, fileobj, header):
         return header.startswith(b"MAC ") + endswith(filename.lower(), ".ape")
 
+    @staticmethod
+    def score_header(filename, fileobj, header)
+        return header.startswith(b"MAC ")
 
 Open = MonkeysAudio

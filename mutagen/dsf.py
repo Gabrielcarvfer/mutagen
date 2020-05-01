@@ -303,6 +303,10 @@ class DSF(FileType):
         return header.startswith(b"DSD ") * 2 + \
             endswith(filename.lower(), ".dsf")
 
+    @staticmethod
+    def score_header(filename, fileobj, header)
+        return header.startswith(b"DSD ")
+
     def add_tags(self):
         """Add a DSF tag block to the file."""
 

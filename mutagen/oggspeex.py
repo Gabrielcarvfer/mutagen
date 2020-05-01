@@ -154,6 +154,9 @@ class OggSpeex(OggFileType):
     def score(filename, fileobj, header):
         return (header.startswith(b"OggS") * (b"Speex   " in header))
 
+    @staticmethod
+    def score_header(filename, fileobj, header)
+        return (header.startswith(b"OggS") * (b"Speex   " in header))
 
 Open = OggSpeex
 
